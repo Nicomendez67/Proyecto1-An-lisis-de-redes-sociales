@@ -32,6 +32,22 @@ public class Lista {
     public boolean esVacio() {
         return pfirst == null;
     }
+
+    // Inserta al final
+    public void insertarFinal(int dato) {
+        Nodo newNodo = new Nodo(dato);
+        if (esVacio()) {
+            pfirst = newNodo;
+        } else {
+            Nodo aux = pfirst;
+            while (aux.getPnext() != null) {
+                aux = aux.getPnext();
+            }
+            aux.setPnext(newNodo);
+        }
+        size++;
+    }
 }
+
 
 
