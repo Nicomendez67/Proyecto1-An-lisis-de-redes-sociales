@@ -24,6 +24,12 @@ public class Grafo {
         for (int i = 0; i < numVertices; i++) {
             adyacentes[i] = new Lista();
         }
+    private void validarVertice(int v) {
+        if (v < 0 || v >= numVertices) {
+            throw new IndexOutOfBoundsException("Vértice fuera de rango: " + v);
+        }
+    }
     
 }
+
 
