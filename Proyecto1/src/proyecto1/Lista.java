@@ -9,5 +9,12 @@ package proyecto1;
  * @author JAVIER MENDEZ
  */
 public class Lista {
-    
+    private Nodo pfirst;
+    private int size;
+
+     public Lista() {
+        this.pfirst = null;
+        this.size = 0;
+    }
 }
+
