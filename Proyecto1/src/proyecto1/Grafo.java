@@ -148,8 +148,19 @@ public class Grafo {
         }
         return gT;
     }
-    
+        private void dfsRecoleccion(int v, boolean[] visitado, Grafo gT) {
+        visitado[v] = true;
+        System.out.print(v + " ");
+        int[] vecinos = gT.adyacentes[v].toArray();
+        for (int w : vecinos) {
+            if (!visitado[w]) {
+                dfsRecoleccion(w, visitado, gT);
+            }
+        }
+    }
+
 }
+
 
 
 
