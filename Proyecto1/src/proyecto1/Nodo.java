@@ -9,5 +9,40 @@ package proyecto1;
  * @author JAVIER MENDEZ
  */
 public class Nodo {
-    
+     private Nodo Pnext;
+    private int dato;
+
+    public Nodo(int dato) {
+        this.Pnext = null;
+        this.dato = dato;
+    }
+
+    /**
+     * @return the Pnext
+     */
+    public Nodo getPnext() {
+        return Pnext;
+    }
+
+    /**
+     * @param Pnext the Pnext to set
+     */
+    public void setPnext(Nodo Pnext) {
+        this.Pnext = Pnext;
+    }
+
+    /**
+     * @return the dato
+     */
+    public int getDato() {
+        return dato;
+    }
+
+    /**
+     * @param dato the dato to set
+     */
+    public void setDato(int dato) {
+        this.dato = dato;
+    }
 }
+
