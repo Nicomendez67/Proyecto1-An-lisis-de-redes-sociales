@@ -61,7 +61,52 @@ public class Lista {
         }
         cadena += "]";
         return cadena;
+    }
+
+     // Elimina la primera ocurrencia de x
+    public void eliminar(int x) {
+        if (esVacio()) return;
+
+        if (pfirst.getDato() == x) {
+            pfirst = pfirst.getPnext();
+            size--;
+            return;
+        }
+
+        Nodo actual = pfirst;
+        while (actual.getPnext() != null && actual.getPnext().getDato() != x) {
+            actual = actual.getPnext();
+        }
+
+        if (actual.getPnext() != null) {
+            actual.setPnext(actual.getPnext().getPnext());
+            size--;
+        }
+    }
+
+     // Busca si x está en la lista
+    public boolean busqueda(int x) {
+        Nodo actual = pfirst;
+        while (actual != null) {
+            if (actual.getDato() == x) return true;
+            actual = actual.getPnext();
+        }
+        return false;
+    }
+
+    // Convierte la lista a arreglo
+    public int[] toArray() {
+        int[] resultado = new int[size];
+        Nodo actual = pfirst;
+        int i = 0;
+        while (actual != null) {
+            resultado[i++] = actual.getDato();
+            actual = actual.getPnext();
+        }
+        return resultado;
+    }
 }
+
 
 
 
