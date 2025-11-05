@@ -47,7 +47,22 @@ public class Lista {
         }
         size++;
     }
+
+     // Imprime la lista como cadena
+    public String imprimir() {
+        String cadena = "[";
+        Nodo aux = pfirst;
+        while (aux != null) {
+            cadena += aux.getDato();
+            if (aux.getPnext() != null) {
+                cadena += ",";
+            }
+            aux = aux.getPnext();
+        }
+        cadena += "]";
+        return cadena;
 }
+
 
 
 
