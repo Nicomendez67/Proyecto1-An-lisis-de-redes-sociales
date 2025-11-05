@@ -126,7 +126,20 @@ public class Grafo {
         }
         System.out.println();
     }
+     public int getNumVertices() {
+        return numVertices;
+    }
+    
+    public boolean esDirigido() {
+        return esDirigido;
+    }
+    
+    private static class IntWrapper {
+        int value = -1;
+    }
+
 }
+
 
 
 
