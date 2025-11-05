@@ -98,7 +98,36 @@ public class Grafo {
             }
         }
     }
+    public void BFS(int inicio) {
+        validarVertice(inicio);
+        boolean[] visitado = new boolean[numVertices];
+        int[] cola = new int[numVertices];
+        int frente = 0, fin = 0;
+
+        visitado[inicio] = true;
+        cola[fin++] = inicio;
+
+        while (frente < fin) {
+            int v = cola[frente++];
+            System.out.print(v + " ");
+
+            int[] vecinos = adyacentes[v].toArray();
+            for (int i = 0; i < vecinos.length; i++) {
+                int vecino = vecinos[i];
+                if (!visitado[vecino]) {
+                    visitado[vecino] = true;
+
+                    // Protección por si se intentara encolar más de numVertices (no debería pasar)
+                    if (fin < numVertices) {
+                        cola[fin++] = vecino;
+                    }
+                }
+            }
+        }
+        System.out.println();
+    }
 }
+
 
 
 
