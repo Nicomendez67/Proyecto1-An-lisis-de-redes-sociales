@@ -29,7 +29,63 @@ public class Grafo {
             throw new IndexOutOfBoundsException("Vértice fuera de rango: " + v);
         }
     }
-    
+    // Agregar arista u -> v
+    public void agregarArista(int origen, int destino) {
+        validarVertice(origen);
+        validarVertice(destino);
+
+        // Evita duplicados si ya existe la arista
+        if (!adyacentes[origen].busqueda(destino)) {
+            adyacentes[origen].insertarFinal(destino);
+        }
+
+        if (!esDirigido) {
+            if (!adyacentes[destino].busqueda(origen)) {
+                adyacentes[destino].insertarFinal(origen);  
+            }
+        }
+    }
+
+    // Eliminar arista u -> v
+    public void eliminarArista(int origen, int destino) {
+        validarVertice(origen);
+        validarVertice(destino);
+
+        adyacentes[origen].eliminar(destino);               
+
+        if (!esDirigido) {
+            adyacentes[destino].eliminar(origen);
+        }
+    }
+    // Verificar si existe u -> v
+    public boolean existeArista(int origen, int destino) {
+        validarVertice(origen);
+        validarVertice(destino);
+        return adyacentes[origen].busqueda(destino);
+    }
+
+    // Grado de un vértice (saliente en grafos dirigidos)
+    public int grado(int v) {
+        validarVertice(v);
+        return adyacentes[v].toArray().length;
+    }
+
+    // Mostrar lista de adyacencia
+    public void mostrar() {
+        for (int i = 0; i < numVertices; i++) {
+            System.out.print(i + " → ");
+            adyacentes[i].imprimir();
+            System.out.println();
+        }
+    }
+    // DFS (profundidad) desde 'inicio'
+    public void DFS(int inicio) {
+        validarVertice(inicio);
+        boolean[] visitado = new boolean[numVertices];
+        DFSRecursivo(inicio, visitado);
+        System.out.println();
+    }
 }
+
 
 
