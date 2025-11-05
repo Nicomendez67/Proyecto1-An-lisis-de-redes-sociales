@@ -138,7 +138,19 @@ public class Grafo {
         int value = -1;
     }
 
+    private Grafo transponer() { 
+        Grafo gT = new Grafo(numVertices, esDirigido);
+        for (int u = 0; u < numVertices; u++) {
+            int[] vecinos = adyacentes[u].toArray();
+            for (int v : vecinos) {
+                gT.agregarArista(v, u);
+            }
+        }
+        return gT;
+    }
+    
 }
+
 
 
 
