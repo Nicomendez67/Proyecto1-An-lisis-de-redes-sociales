@@ -16,5 +16,22 @@ public class Lista {
         this.pfirst = null;
         this.size = 0;
     }
+
+    public Nodo getPfirst() {
+        return pfirst;
+    }
+
+    public void setPfirst(Nodo pfirst) {
+        this.pfirst = pfirst;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public boolean esVacio() {
+        return pfirst == null;
+    }
 }
+
 
