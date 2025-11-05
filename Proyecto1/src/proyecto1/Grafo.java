@@ -85,7 +85,21 @@ public class Grafo {
         DFSRecursivo(inicio, visitado);
         System.out.println();
     }
+     private void DFSRecursivo(int v, boolean[] visitado) {
+        if (visitado[v]) return; // evita reprocesar por seguridad
+        visitado[v] = true;
+        System.out.print(v + " ");
+
+        int[] vecinos = adyacentes[v].toArray();
+        for (int i = 0; i < vecinos.length; i++) {
+            int vecino = vecinos[i];
+            if (!visitado[vecino]) {
+                DFSRecursivo(vecino, visitado);
+            }
+        }
+    }
 }
+
 
 
 
