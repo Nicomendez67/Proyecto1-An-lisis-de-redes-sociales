@@ -158,8 +158,36 @@ public class Grafo {
             }
         }
     }
+     public void kosaraju() { 
+        if (!esDirigido) {
+            System.out.println("Kosaraju solo aplica a grafos dirigidos.");
+            return;
+        }
 
+        boolean[] visitado = new boolean[numVertices];
+        int[] stack = new int[numVertices];
+        IntWrapper top = new IntWrapper();
+
+        for (int i = 0; i < numVertices; i++) {
+            if (!visitado[i]) {
+                dfsLlenarStack(i, visitado, stack, top);
+            }
+        }
+
+        Grafo gT = transponer();
+        visitado = new boolean[numVertices];
+
+        System.out.println("Componentes fuertemente conectadas:");
+        while (top.value >= 0) {
+            int v = stack[top.value--];
+            if (!visitado[v]) {
+                dfsRecoleccion(v, visitado, gT);
+                System.out.println();
+            }
+        }
+    }
 }
+
 
 
 
