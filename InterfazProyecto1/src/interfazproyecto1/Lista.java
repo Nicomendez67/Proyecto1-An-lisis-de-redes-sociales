@@ -5,13 +5,16 @@
 package interfazproyecto1;
 
 /**
- *
+ * Crea los atributos de la clase lista 
  * @author JAVIER MENDEZ
  */
 public class Lista {
      private Nodo pfirst;   
     private int size;
-
+/**
+ * Inicializa la clase Lista  
+ * 
+ */
     public Lista() {
         this.pfirst = pfirst;
         this.size = 0;
@@ -122,5 +125,6 @@ public class Lista {
         return resultado;
     }
 }
+
 
 
