@@ -168,7 +168,13 @@ public class Grafo {
         }
         stack[++top.value] = v;
     }
-
+     /**
+      * Realiza DFS sobre el grafo transpuesto para recolectar componentes fuertemente conectadas.
+      *
+      * @param v        vértice actual
+      * @param visitado arreglo de visitados
+      * @param gT       grafo transpuesto
+      */
     private void dfsRecoleccion(int v, boolean[] visitado, Grafo gT) {
         visitado[v] = true;
         System.out.print(v + " ");
@@ -213,5 +219,6 @@ public class Grafo {
         }
     }
 }
+
 
 
