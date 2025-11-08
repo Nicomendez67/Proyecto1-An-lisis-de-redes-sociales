@@ -5,13 +5,17 @@
 package interfazproyecto1;
 
 /**
- *
+ * Cra los atributos a la clase Nodo
  * @author JAVIER MENDEZ
  */
 public class Nodo {
      private Nodo Pnext;
     private int dato;
-
+     
+     /**
+      * Inicializa la clase Nodo con el constructor 
+      * Pasando como parametro int dato
+      */
     public Nodo(int dato) {
         this.Pnext = null;
         this.dato = dato;
@@ -47,3 +51,4 @@ public class Nodo {
     
     
 }
+
