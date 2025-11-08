@@ -105,8 +105,13 @@ public class Grafo {
         }
     }
 
-    // BFS (anchura) desde 'inicio' con cola manual basada en arreglo
-    public void BFS(int inicio) {
+     /**
+      * Realiza un recorrido en anchura (BFS) desde el vértice especificado.
+      *
+      * @param inicio el vértice desde el cual iniciar el recorrido
+      */
+          
+     public void BFS(int inicio) {
         validarVertice(inicio);
         boolean[] visitado = new boolean[numVertices];
         int[] cola = new int[numVertices];
@@ -134,11 +139,19 @@ public class Grafo {
         }
         System.out.println();
     }
-
+     /**
+      * Retorna el número total de vértices del grafo.
+      *
+      * @return número de vértices
+      */
     public int getNumVertices() {
         return numVertices;
     }
-    
+    /**
+      * Indica si el grafo es dirigido.
+      *
+      * @return true si es dirigido, false si es no dirigido
+      */
     public boolean esDirigido() {
         return esDirigido;
     }
@@ -234,6 +247,7 @@ public class Grafo {
         }
     }
 }
+
 
 
 
