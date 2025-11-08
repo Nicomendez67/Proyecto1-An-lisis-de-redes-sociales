@@ -16,7 +16,11 @@ public class InterfazProyecto1 {
 
     /**
      * @param args the command line arguments
+     *
+     *   
+     *  inicializar la ventana1
      */
+     
     public static void main(String[] args) {
         // TODO code application logic here
         
@@ -25,3 +29,4 @@ public class InterfazProyecto1 {
     }
     
 }
+
