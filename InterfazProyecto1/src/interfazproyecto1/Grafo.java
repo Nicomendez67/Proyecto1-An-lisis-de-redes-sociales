@@ -179,7 +179,11 @@ public class Grafo {
             }
         }
     }
-
+     /**
+      * Ejecuta el algoritmo de Kosaraju para encontrar y mostrar
+      * las componentes fuertemente conectadas del grafo dirigido.
+      * Si el grafo no es dirigido, muestra un mensaje de advertencia.
+      */
     public void kosaraju() { 
         if (!esDirigido) {
             System.out.println("Kosaraju solo aplica a grafos dirigidos.");
@@ -209,4 +213,5 @@ public class Grafo {
         }
     }
 }
+
 
