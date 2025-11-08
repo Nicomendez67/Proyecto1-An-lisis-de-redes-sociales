@@ -16,7 +16,8 @@ public class Grafo {
      
      /**
      * 
-     *   
+     * @param numVertices
+     * @param esDirigido
      *  Inicializa el grafo y verifica la creacion de un grafo
      */
      
@@ -281,6 +282,7 @@ public class Grafo {
         }
     }
 }
+
 
 
 
