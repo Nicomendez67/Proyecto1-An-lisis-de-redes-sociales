@@ -74,7 +74,9 @@ public class Grafo {
         return adyacentes[v].toArray().length;
     }
 
-    // Mostrar lista de adyacencia
+     /**
+      * Muestra la lista de adyacencia de cada vértice del grafo.
+      */
     public void mostrar() {
         for (int i = 0; i < numVertices; i++) {
             System.out.print(i + " → ");
@@ -256,6 +258,7 @@ public class Grafo {
         }
     }
 }
+
 
 
 
