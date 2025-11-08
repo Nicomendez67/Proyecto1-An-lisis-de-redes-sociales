@@ -83,14 +83,23 @@ public class Grafo {
         }
     }
 
-    // DFS (profundidad) desde 'inicio'
+    /**
+      * Realiza un recorrido en profundidad (DFS) desde el vértice especificado.
+      *
+      * @param inicio el vértice desde el cual iniciar el recorrido
+      */
     public void DFS(int inicio) {
         validarVertice(inicio);
         boolean[] visitado = new boolean[numVertices];
         DFSRecursivo(inicio, visitado);
         System.out.println();
     }
-
+     /**
+      * Método auxiliar recursivo para DFS.
+      *
+      * @param v        el vértice actual
+      * @param visitado arreglo que indica qué vértices han sido visitados
+      */
     private void DFSRecursivo(int v, boolean[] visitado) {
         if (visitado[v]) return; // evita reprocesar por seguridad
         visitado[v] = true;
@@ -247,6 +256,7 @@ public class Grafo {
         }
     }
 }
+
 
 
 
