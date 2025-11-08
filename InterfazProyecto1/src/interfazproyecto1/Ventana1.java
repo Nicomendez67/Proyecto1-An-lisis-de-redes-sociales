@@ -197,6 +197,11 @@ public class Ventana1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+      * Al presionar el boton, se va a inicializar o hacer visible la ventana2
+      * 
+      */
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
