@@ -21,8 +21,11 @@ import org.graphstream.ui.view.Viewer;
  */
 public class VentanaGrafo extends javax.swing.JFrame {
 
-    /**
-     * Creates new form VentanaGrafo
+    
+    /**@param File archivo
+     * Lee el archivo txt linea por linea y si hay un split o separation con ","
+     * se crean dos partes, la primera el nodo origen y la segunda el nodo destino;
+     * para luego agregar las aristas entre ellos, posteriormente se dibuja el grafo.
      */
     public VentanaGrafo(File archivo) {
         initComponents();
