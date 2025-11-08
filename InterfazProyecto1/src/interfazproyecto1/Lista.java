@@ -52,7 +52,10 @@ public class Lista {
         return pfirst == null;
     }
 
-    // Inserta al final
+/**
+ * Inserta un nodo al final de la lista enlazada
+ * 
+ */
     public void insertarFinal(int dato) {
         Nodo newNodo = new Nodo(dato);
         if (esVacio()) {
@@ -67,7 +70,10 @@ public class Lista {
         size++;
     }
 
-    // Imprime la lista como cadena
+     /**
+      * Imprime la lista y la pasa a un cadena de tipo String
+      * 
+      */
     public String imprimir() {
         String cadena = "[";
         Nodo aux = pfirst;
@@ -82,7 +88,10 @@ public class Lista {
         return cadena;
     }
 
-    // Elimina la primera ocurrencia de x
+/**
+ * Elimina la primera ocurrencia de X
+ * 
+ */
     public void eliminar(int x) {
         if (esVacio()) return;
 
@@ -103,7 +112,10 @@ public class Lista {
         }
     }
 
-    // Busca si x está en la lista
+     /**
+      * Buscar si X esta dentro de la lista enlazada
+      * 
+      */
     public boolean busqueda(int x) {
         Nodo actual = pfirst;
         while (actual != null) {
@@ -112,9 +124,11 @@ public class Lista {
         }
         return false;
     }
-
-    // Convierte la lista a arreglo
-    public int[] toArray() {
+     /**
+      * Convierte la lista a un Array o arreglo
+      * 
+      */
+   public int[] toArray() {
         int[] resultado = new int[size];
         Nodo actual = pfirst;
         int i = 0;
@@ -125,6 +139,7 @@ public class Lista {
         return resultado;
     }
 }
+
 
 
 
