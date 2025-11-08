@@ -58,7 +58,7 @@ public class VentanaGrafo extends javax.swing.JFrame {
             System.out.println("Aristas creadas: " + grafo.getEdgeCount());
             Viewer viewer = new SwingViewer(grafo, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
             viewer.enableAutoLayout();
-            ViewPanel panel = (ViewPanel) viewer.addDefaultView(false); // ✅ Cast explícito
+            ViewPanel panel = (ViewPanel) viewer.addDefaultView(false); 
 
             add(panel, BorderLayout.CENTER);
             setSize(800, 600);
