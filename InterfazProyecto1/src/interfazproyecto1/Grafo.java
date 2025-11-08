@@ -32,12 +32,16 @@ public class Grafo {
         }
     }
 
-    // Agregar arista u -> v
+    /* 
+     *Agregar arista u -> v
+     */
     public void agregarArista(int origen, int destino) {
         validarVertice(origen);
         validarVertice(destino);
 
-        // Evita duplicados si ya existe la arista
+        /* 
+        *Evita duplicados si ya existe la arista
+        */
         if (!adyacentes[origen].busqueda(destino)) {
             adyacentes[origen].insertarFinal(destino);
         }
@@ -49,7 +53,9 @@ public class Grafo {
         }
     }
 
-    // Eliminar arista u -> v
+    /**
+    *Eliminar arista u -> v
+    */
     public void eliminarArista(int origen, int destino) {
         validarVertice(origen);
         validarVertice(destino);
@@ -61,15 +67,23 @@ public class Grafo {
         }
     }
 
-    // Verificar si existe u -> v
+    /**
+     *Verificar si existe u -> v
+     */
     public boolean existeArista(int origen, int destino) {
         validarVertice(origen);
         validarVertice(destino);
         return adyacentes[origen].busqueda(destino);
     }
 
-    // Grado de un vértice (saliente en grafos dirigidos)
-    public int grado(int v) {
+     /**
+      * Retorna el grado (número de adyacencias) del vértice especificado.
+      * En grafos dirigidos, se refiere al grado de salida.
+      *
+      * @param v el vértice a consultar
+      * @return el número de adyacencias del vértice
+      */    
+     public int grado(int v) {
         validarVertice(v);
         return adyacentes[v].toArray().length;
     }
@@ -258,6 +272,7 @@ public class Grafo {
         }
     }
 }
+
 
 
 
