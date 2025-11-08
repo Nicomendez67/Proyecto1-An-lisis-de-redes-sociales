@@ -67,6 +67,8 @@ public class Grafo {
 
     /**
     *Eliminar arista u -> v
+    * @param origen
+     * @param destino
     */
     public void eliminarArista(int origen, int destino) {
         validarVertice(origen);
@@ -81,6 +83,9 @@ public class Grafo {
 
     /**
      *Verificar si existe u -> v
+     *@param origen
+     * @param destino
+     * @return 
      */
     public boolean existeArista(int origen, int destino) {
         validarVertice(origen);
@@ -284,6 +289,7 @@ public class Grafo {
         }
     }
 }
+
 
 
 
