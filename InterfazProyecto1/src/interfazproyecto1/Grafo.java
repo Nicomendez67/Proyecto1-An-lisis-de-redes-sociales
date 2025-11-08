@@ -7,12 +7,19 @@ package interfazproyecto1;
 /**
  *
  * @author JAVIER MENDEZ
+ * crea los atributos de la clase grafo
  */
 public class Grafo {
      private final int numVertices;
     private final boolean esDirigido;
     private final Lista[] adyacentes;
-    
+     
+     /**
+     * 
+     *   
+     *  Inicializa el grafo y verifica la creacion de un grafo
+     */
+     
     public Grafo(int numVertices, boolean esDirigido) {
         if (numVertices <= 0) {
             throw new IllegalArgumentException("El número de vértices debe ser positivo.");
@@ -274,6 +281,7 @@ public class Grafo {
         }
     }
 }
+
 
 
 
