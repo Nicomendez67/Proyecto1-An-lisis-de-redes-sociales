@@ -173,14 +173,18 @@ public class Ventana3 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    /*
+    *Incializa la ventana 1 al presionar el boton
+    */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
         Ventana1 v1 = new Ventana1();
         v1.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    /*
+    *Incializa la ventana 4 al presionar el boton
+    */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
