@@ -175,27 +175,40 @@ public class Ventana4 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    /**
+      * Al presionar el boton se va a inicializar o hacer visible la ventana 5
+      * 
+      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
         VentanaJFileChooser5 v5 = new VentanaJFileChooser5 ();
         v5.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    /**
+      * Al presionar el boton se va a inicializar o hacer visible la ventana 3
+      * 
+      */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
         Ventana3 v3 = new Ventana3();
         v3.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
-
+    /**
+      * Al presionar el boton se va a inicializar o hacer visible la ventana 4
+      * 
+      */
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
         Ventana4 v4 = new Ventana4();
         v4.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
+    /**
+      * Al presionar el boton se va a inicializar o hacer visible la ventana 1
+      * 
+      */
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
@@ -203,6 +216,10 @@ public class Ventana4 extends javax.swing.JFrame {
         Ventana1 v1 = new Ventana1();
         v1.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
+    /**
+      * Al presionar el boton se va a inicializar o hacer visible la ventana 7
+      * 
+      */
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
