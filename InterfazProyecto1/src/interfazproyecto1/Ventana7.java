@@ -240,6 +240,9 @@ public class Ventana7 extends javax.swing.JFrame {
         v4.setVisible(true);
     }//GEN-LAST:event_jButton6ActionPerformed
 
+    /**
+     * Al presionar el botton se inicializa la ventana1
+     */
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
