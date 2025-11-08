@@ -12,7 +12,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 /**
- *
+ * Crea la variable archivoSeleccionado
  * @author JAVIER MENDEZ
  */
 public class VentanaJFileChooser5 extends javax.swing.JFrame {
@@ -190,7 +190,10 @@ public class VentanaJFileChooser5 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    /**
+      * Al presionar el boton se va abrir el JFileChooser y se va abrir y posteriormente guardar el arcvhivo .txt
+      * 
+      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
 
@@ -240,21 +243,30 @@ if (resultado == JFileChooser.APPROVE_OPTION) {
 
 }   
     }//GEN-LAST:event_jButton1ActionPerformed
-
+/**
+      * Al presionar el boton se va abrir o inicializar la ventana4
+      * 
+      */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
         Ventana4 v4 = new Ventana4();
         v4.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
-
+/**
+      * Al presionar el boton se va abrir o inicializar la ventana1
+      * 
+      */
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
         Ventana1 v1 = new Ventana1();
         v1.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
-
+/**
+      * Al presionar el boton se va abrir o inicializar la ventanagrafo si es que se selecciona un archivo
+      * Si no, no abre y te muestra el JOptionPane
+      */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:  
         if (archivoSeleccionado != null) {
