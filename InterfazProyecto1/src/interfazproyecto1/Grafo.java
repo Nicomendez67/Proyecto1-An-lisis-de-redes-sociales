@@ -25,7 +25,9 @@ public class Grafo {
         }
     }
 
-    // Valida que el vértice esté en rango
+    /* 
+    *Valida que el vértice esté en rango
+    */
     private void validarVertice(int v) {
         if (v < 0 || v >= numVertices) {
             throw new IndexOutOfBoundsException("Vértice fuera de rango: " + v);
@@ -272,6 +274,7 @@ public class Grafo {
         }
     }
 }
+
 
 
 
