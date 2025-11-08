@@ -54,7 +54,7 @@ public class Lista {
 
 /**
  * Inserta un nodo al final de la lista enlazada
- * 
+ * @param dato
  */
     public void insertarFinal(int dato) {
         Nodo newNodo = new Nodo(dato);
@@ -72,7 +72,7 @@ public class Lista {
 
      /**
       * Imprime la lista y la pasa a un cadena de tipo String
-      * 
+      * @return 
       */
     public String imprimir() {
         String cadena = "[";
@@ -90,7 +90,7 @@ public class Lista {
 
 /**
  * Elimina la primera ocurrencia de X
- * 
+ * @param x
  */
     public void eliminar(int x) {
         if (esVacio()) return;
@@ -114,7 +114,8 @@ public class Lista {
 
      /**
       * Buscar si X esta dentro de la lista enlazada
-      * 
+      * @param x
+     * @return 
       */
     public boolean busqueda(int x) {
         Nodo actual = pfirst;
@@ -126,7 +127,7 @@ public class Lista {
     }
      /**
       * Convierte la lista a un Array o arreglo
-      * 
+      * @return 
       */
    public int[] toArray() {
         int[] resultado = new int[size];
@@ -139,6 +140,7 @@ public class Lista {
         return resultado;
     }
 }
+
 
 
 
