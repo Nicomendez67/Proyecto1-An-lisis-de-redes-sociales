@@ -147,6 +147,12 @@ public class Grafo {
         int value = -1;
     }
 
+     /**
+      * Crea y retorna el grafo transpuesto (con todas las aristas invertidas).
+      *
+      * @return el grafo transpuesto
+      */
+     
     private Grafo transponer() { 
         Grafo gT = new Grafo(numVertices, esDirigido);
         for (int u = 0; u < numVertices; u++) {
@@ -157,6 +163,15 @@ public class Grafo {
         }
         return gT;
     }
+
+     /**
+      * Realiza DFS y llena un stack con el orden de finalización de los vértices.
+      *
+      * @param v        vértice actual
+      * @param visitado arreglo de visitados
+      * @param stack    arreglo que actúa como pila
+      * @param top      envoltorio para el índice superior de la pila
+      */
 
     private void dfsLlenarStack(int v, boolean[] visitado, int[] stack, IntWrapper top) {
         visitado[v] = true;
@@ -219,6 +234,7 @@ public class Grafo {
         }
     }
 }
+
 
 
 
