@@ -44,6 +44,8 @@ public class Grafo {
 
     /** 
      *Agregar arista u -> v
+     *@param origen
+     * @param destino
      */
     public void agregarArista(int origen, int destino) {
         validarVertice(origen);
@@ -282,6 +284,7 @@ public class Grafo {
         }
     }
 }
+
 
 
 
