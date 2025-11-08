@@ -33,7 +33,7 @@ public class Grafo {
         }
     }
 
-    /* 
+    /** 
     *Valida que el vértice esté en rango
     */
     private void validarVertice(int v) {
@@ -42,14 +42,14 @@ public class Grafo {
         }
     }
 
-    /* 
+    /** 
      *Agregar arista u -> v
      */
     public void agregarArista(int origen, int destino) {
         validarVertice(origen);
         validarVertice(destino);
 
-        /* 
+        /** 
         *Evita duplicados si ya existe la arista
         */
         if (!adyacentes[origen].busqueda(destino)) {
@@ -282,6 +282,7 @@ public class Grafo {
         }
     }
 }
+
 
 
 
